@@ -32,15 +32,15 @@ body {
     min-height: 100vh;
 }
 
-button {
+.btn {
     background-color: var(--Very-light-gray-background-headings-buttons);
     border-radius: 3rem;
     border: none;
     padding: 1rem 2rem;
-    font-size: 1rem;
+    /* font-size: 1rem; */
 }
 
-h1 {
+h2 {
     color: var(--Very-light-gray-background-headings-buttons);
     text-transform: uppercase;
     font-family: var(--Big-shoulders-display);
@@ -52,12 +52,16 @@ p {
     color: var(--Transparent-white-paragraphs);
     font-family: var(--Lexend-deca);
     font-weight: 400;
+    padding-bottom: 1em;
 }
 
 .container {
     margin: 0 auto;
     padding-top: 2.5em;
     padding-inline: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .card__sedans,
@@ -134,10 +138,11 @@ p {
     color: var(--Bright-orange);
 }
 
-@media (min-width: 580px) {
+@media (min-width: 725px) {
     .container {
         max-width: 800px;
-        display: flex;
+        flex-direction: row;
+        align-items: initial;
     }
 
     .card__sedans {
